@@ -5,3 +5,4 @@ This project is for lab 03. I made responsive horizontal cards and you scroll th
 In this project, I learned a lot about styling with CSS and scripting with Javascript, and it took me about one day and a half to finish.
 
 Poject link:
+[link](https://fahadsamarat.github.io/magical_characters/)
