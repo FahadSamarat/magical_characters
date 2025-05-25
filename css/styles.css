@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url("../fonts/HarryP-MVZ6w.ttf") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  
+  font-family: 'MyFont', Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  background: url("/images/pic1.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+  background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+/* navbar */
+
+header {
+    padding: 15px;
+      background: linear-gradient(to bottom,rgba(158, 51, 224, 0.5), rgba(0, 0, 0, 0));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: rgb(228, 215, 238);
+}
+.dropdown {
+      position: relative;
+      display: inline-block;
+    }
+.dropdown-btn {
+  margin: 0 20px 0 20px;
+    border-radius: 20px;
+      padding: 10px;
+      background-color: #784af5;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 120px;
+      font-size: 16px;
+      font-weight: 800;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+.main-btn {
+  margin: 5px 15px 5px 15px;
+  display: flex;
+  justify-content: center;
+}
+.dropdown-content {
+    margin: 0 20px 0 20px;
+
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgb(232, 225, 237);
+    width: 120px;
+    box-shadow: 0px 16px 24px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    overflow: hidden;
+    font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+
+      
+
+    }
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    }
+.dropdown-content a:hover {
+    background-color: rgb(212, 193, 217);
+    }
+
+.dropdown:hover .dropdown-content {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    
+/* btn2 */
+.dropdown-content-cards {
+    margin: 0 20px 0 20px;
+
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgb(232, 225, 237);
+    min-width: 120px;
+    box-shadow: 0px 16px 24px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    overflow: hidden;
+    font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+                        text-align: center;
+
+
+      
+
+    }
+.dropdown-content-cards a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    }
+.dropdown-content-cards a:hover {
+    background-color: rgb(212, 193, 217);
+    }
+
+.dropdown:hover .dropdown-content-cards {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+main h2 {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0 10px 0;
+    font-size: 32px;
+    color: rgb(228, 215, 238);
+
+}
+/* cards */
+
+    .scroll-container-wrapper {
+      position: relative;
+      overflow: hidden;
+      height: 450px; /* Fixed size container */
+    }
+
+    .scroll-container {
+      display: flex;
+      flex-wrap: nowrap; /* Keep cards in a single row */
+      overflow: auto;     /* Enable both horizontal and vertical scroll */
+      gap: 16px;
+      padding: 20px 80px 20px 80px;
+      scroll-behavior: auto;
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+      mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      height: 440px;
+      
+    }
+
+.card {
+      flex: 0 0 auto;
+      width: 280px;
+      height: 380px; /* Taller than container to require vertical scroll */
+      background: rgba(158, 51, 224, 0.25); /* Semi-transparent */
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+	    justify-content: flex-start;
+      font-weight: bold;
+      transition: transform 0.3s ease;
+      overflow: hidden;
+      color: rgb(228, 215, 238);
+
+    }
+
+#Gryffindor {
+    box-shadow: 0 5px 18px rgba(243, 117, 95, 0.5);
+  }
+#Slytherin {
+    box-shadow: 0 5px 18px rgba(245, 228, 236, 0.5);
+  }
+#Hufflepuff {
+    box-shadow: 0 5px 18px rgba(51, 229, 205, 0.5);
+  }
+#Ravenclaw {
+    box-shadow: 0 5px 18px rgba(211, 227, 117, 0.5);
+  }
+
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 40px;
+  padding: 20px 0;  
+}
+.character-info {
+  line-height: 40px;
+  font-size: 24px;
+}
+
+.character-info h3 {
+  font-size: 36px;
+}
+    .scroll-container::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 4px;
+    }
+
+    .scroll-container::-webkit-scrollbar-track {
+      background: #eee;
+    }
+
+/* Custom Scrollbar Styling */
+.scroll-container::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #784af5; /* Blue thumb */
+  border-radius: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: transparent; /* No background */
+}
+
+/* Firefox scrollbar styling */
+.scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #784af5 transparent; /* thumb color, then transparent track */
+}
+
+
+footer {
+  background: linear-gradient(to top,rgba(158, 51, 224, 0.5), rgba(0, 0, 0, 0));
+  color: rgb(228, 215, 238);
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+}
+
+
