@@ -15,7 +15,7 @@ body {
   
   font-family: 'MyFont', Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
-  background: url("/images/pic1.jpg");
+  background: url("../images/pic1.jpg");
     height: 100vh;
     background-repeat: no-repeat;
   background-size: cover;
